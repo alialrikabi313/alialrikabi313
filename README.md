@@ -2,7 +2,8 @@
 
 <p align="center">
   <strong>AI engineer building evaluation-driven RAG and agent tooling — with a focus on Arabic and multilingual systems.</strong><br>
-  I measure before I claim, and I publish the results that contradict my own hypotheses.
+  I measure before I claim, and I publish the results that contradict my own hypotheses.<br>
+  <strong>Open to remote work.</strong>
 </p>
 
 <p align="center">
