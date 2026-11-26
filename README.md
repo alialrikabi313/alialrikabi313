@@ -30,6 +30,7 @@ I expected semantic chunking to beat fixed windows for Arabic RAG. On 442 questi
 
 | Project | What it does | Result |
 |---|---|---|
+| **[arabic-retrieval-finetune](https://github.com/alialrikabi313/arabic-retrieval-finetune)** | Fine-tunes a small multilingual embedder for Arabic retrieval; evaluated on the **full** MIRACL-ar corpus (2.06M passages), with ablations | nDCG@10 **0.145 → 0.402** from 30 s of training (still below e5/bge-m3, reported as is); hard negatives gave no gain over random |
 | **[arabic-rag-bench](https://github.com/alialrikabi313/arabic-rag-bench)** | Reproducible benchmark of chunking strategies for Arabic RAG, with bootstrap CIs and size-matched baselines | Paragraph chunks: Hit@1 **0.792**, MRR **0.863**; semantic chunking adds no gain at equal size |
 | **[arabic-embed-bench](https://github.com/alialrikabi313/arabic-embed-bench)** | CLI to compare embedding models on *your* documents, with the prompt-prefix pitfalls handled | `e5-small` matches `bge-m3` within error at ~**9×** less encode time |
 | **[grounded-qa-eval](https://github.com/alialrikabi313/grounded-qa-eval)** | Scores whether an LLM answers only when the passage supports it and quotes its evidence verbatim, using hard negatives and no LLM judge | A local 27B model abstained on 98.8% of hard negatives with 0 fabricated quotes — but wrongly refused 11% of answerable questions |
