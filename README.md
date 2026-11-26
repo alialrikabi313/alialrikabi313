@@ -44,11 +44,11 @@ All seven have tests and CI workflows. The tests come from real failures I hit; 
 
 Production Flutter apps (Arabic, RTL), published under my own developer accounts:
 
-- **20 apps live on [Google Play](https://play.google.com/store/apps/developer?id=Ali+Al-rikabi313)** — **97,000+ installs combined** (sum of each app's public install tier; 7 apps are at 10K+), **4.93★ average over 931 ratings** (13 apps have enough ratings to show one).
+- **20 apps live on [Google Play](https://play.google.com/store/apps/developer?id=Ali+Al-rikabi313)** — **~228,000 downloads in total** (from my Play Console, summed across the 20 apps; counts installs, not unique users), **4.9★ average** (4.93 over 931 ratings on the public store pages; 7 apps are at the 10K+ tier).
 - **9 apps on the [App Store](https://apps.apple.com/us/developer/id1829770951)** — smaller footprint (e.g. the hadith library has 5 ratings).
 - **[darb-maps](https://github.com/alialrikabi313/darb-maps)** — offline-capable navigation for Iraq on OpenStreetMap, with Iraqi-dialect voice guidance and driver-reported traffic.
 
-*Figures are from the public store pages, 2026-11-26. Install counts are lower bounds (Google shows tiers, not exact numbers).*
+*Download total: Play Console, as of 2026-11-26. Ratings and tiers: public store pages (Google shows install tiers there, not exact numbers).*
 
 ## How I work
 
