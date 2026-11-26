@@ -1,105 +1,53 @@
 <h1 align="center">Ali Hashim Al-Rikabi</h1>
 
 <p align="center">
-  <strong>Flutter & Python developer based in Iraq 🇮🇶</strong><br>
-  Building production mobile apps, AI/ML systems, and Arabic-language software for the MENA market.
+  <strong>AI engineer building evaluation-driven RAG and agent tooling — with a focus on Arabic and multilingual systems.</strong><br>
+  I measure before I claim, and I publish the results that contradict my own hypotheses.
 </p>
 
 <p align="center">
-  <a href="https://play.google.com/store/apps/developer?id=Ali+Al-rikabi313">
-    <img src="https://img.shields.io/badge/Google_Play-Live_Apps-34A853?style=for-the-badge&logo=google-play&logoColor=white" alt="Google Play">
-  </a>
-  <a href="mailto:alialrikabi313a@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <a href="https://github.com/alialrikabi313">
-    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
+  <a href="mailto:alialrikabi313a@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://play.google.com/store/apps/developer?id=Ali+Al-rikabi313"><img src="https://img.shields.io/badge/Google_Play-Live_Apps-34A853?style=for-the-badge&logo=google-play&logoColor=white" alt="Google Play"></a>
 </p>
 
 ---
 
-## 📊 GitHub Stats
+## A finding worth your two minutes
+
+I expected semantic chunking to beat fixed windows for Arabic RAG. On 442 questions it didn't: **chunk size, not chunking strategy, drives retrieval quality** — semantic chunks land exactly on the fixed-window trend, and the cheapest method (paragraphs) was best.
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=alialrikabi313&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" height="170">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alialrikabi313&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" height="170">
+  <a href="https://github.com/alialrikabi313/arabic-rag-bench">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/alialrikabi313/arabic-rag-bench/raw/main/docs/size-vs-hit1-dark.png">
+      <img src="https://github.com/alialrikabi313/arabic-rag-bench/raw/main/docs/size-vs-hit1-light.png" alt="Hit@1 versus median chunk size" width="640">
+    </picture>
+  </a>
 </p>
 
----
+## Open-source work
 
-## 🛠️ Tech Stack
+| Project | What it does | Result |
+|---|---|---|
+| **[arabic-rag-bench](https://github.com/alialrikabi313/arabic-rag-bench)** | Reproducible benchmark of chunking strategies for Arabic RAG, with bootstrap CIs and size-matched baselines | Paragraph chunks: Hit@1 **0.792**, MRR **0.863**; semantic chunking adds no gain at equal size |
+| **[arabic-embed-bench](https://github.com/alialrikabi313/arabic-embed-bench)** | CLI to compare embedding models on *your* documents, with the prompt-prefix pitfalls handled | `e5-small` matches `bge-m3` within error at ~**9×** less encode time |
+| **[arabic-rag-app](https://github.com/alialrikabi313/arabic-rag-app)** | Flutter RTL chat + FastAPI/bge-m3 backend; answers with numbered, tappable sources | Refusal threshold calibrated on 442 valid vs. 20 off-topic questions — trade-off table published |
+| **[arabic-text-mcp](https://github.com/alialrikabi313/arabic-text-mcp)** | MCP server of deterministic Arabic text tools | Verified end-to-end over a real stdio MCP session |
 
-### Mobile Development
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-![Hive](https://img.shields.io/badge/Hive-FF6B35?style=flat-square&logoColor=white)
-![Provider](https://img.shields.io/badge/Provider-4285F4?style=flat-square&logoColor=white)
+All four have tests and CI workflows. The tests come from real failures I hit; the key chunking test is verified to fail when its bug is reintroduced.
 
-### Backend & APIs
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+## Shipped apps
 
-### AI / ML
-![Gemini](https://img.shields.io/badge/Gemini_API-8E75B2?style=flat-square&logo=google&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logoColor=white)
+- **[darb-maps](https://github.com/alialrikabi313/darb-maps)** — offline-capable navigation for Iraq on OpenStreetMap, with Iraqi-dialect voice guidance and driver-reported traffic
+- **[anwarsajadia](https://github.com/alialrikabi313/anwarsajadia)** — Flutter app for the Sahifa Sajjadiyya and the Treatise on Rights, plus the Quran with tafsir, supplications and a compass
+- More on [Google Play](https://play.google.com/store/apps/developer?id=Ali+Al-rikabi313)
 
-### Game Dev & Tooling
-![Flame](https://img.shields.io/badge/Flame_Engine-F36F2A?style=flat-square&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Fastlane](https://img.shields.io/badge/Fastlane-95B524?style=flat-square&logo=fastlane&logoColor=white)
+## How I work
 
----
+- **Evaluation first:** golden questions with verbatim-quote evidence, confidence intervals, and the baseline that could embarrass my idea.
+- **Honest limits:** every README lists what the numbers do *not* show.
+- **Production habits:** config-driven, resumable pipelines, explicit failure modes, tests drawn from real cases.
 
-## 🚀 What I Build
+## Stack
 
-- **📱 Mobile applications** published on Google Play across Islamic education, productivity, and freelance tools
-- **🤖 AI-powered systems** including RAG pipelines, agentic search, and Arabic NLP processing
-- **🌐 Full-stack platforms** with real-time features, role-based access control, and multi-tenant architecture
-- **⚙️ Automation tools** and trading systems built on top of machine learning models
-
----
-
-## 🌍 Specialization: The Arabic-Language MENA Market
-
-A significant portion of my work focuses on building production-ready software for **Arabic-speaking users** across Iraq and the Gulf region:
-
-- 🔤 **Arabic NLP integrations** — diacritization, grammar correction, semantic search
-- 👁️ **Arabic OCR pipelines** using Vision LLMs for document digitization
-- 🎨 **Native RTL UI design** with Arabic-optimized typography and layout
-- 🗣️ **Localized UX** for Iraqi and Gulf Arabic dialects
-- 🕌 **Domain expertise** in Islamic content systems and educational platforms
-
----
-
-## 📱 Featured Published Apps
-
-| App | Description | Platform |
-|-----|-------------|----------|
-| **موجز الأحكام** | Simplified Shia Islamic rulings | [Google Play](https://play.google.com/store/apps/developer?id=Ali+Al-rikabi313) |
-| **الممهدون** | Mahdawi-themed Islamic content | [Google Play](https://play.google.com/store/apps/developer?id=Ali+Al-rikabi313) |
-| **مكتبة الحج (Hajbook)** | Curated digital library for Hajj pilgrims | [Google Play](https://play.google.com/store/apps/developer?id=Ali+Al-rikabi313) |
-
-[**→ View all my published apps on Google Play**](https://play.google.com/store/apps/developer?id=Ali+Al-rikabi313)
-
----
-
-## 📫 Contact
-
-- 📧 **Email:** [alialrikabi313a@gmail.com](mailto:alialrikabi313a@gmail.com)
-- 🎮 **Google Play:** [ali al-rikabi313](https://play.google.com/store/apps/developer?id=Ali+Al-rikabi313)
-- 💼 **Available for hire** — open to collaboration and contract work
-
----
-
-<p align="center">
-  <em>Building software for the Arabic-speaking world, one production app at a time.</em>
-</p>
+**AI:** Python · sentence-transformers · Ollama / local LLMs · RAG evaluation · MCP  ·  **Backend:** FastAPI · NestJS · PostgreSQL · Docker  ·  **Mobile:** Flutter · Dart · Firebase
